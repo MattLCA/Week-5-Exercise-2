@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column; /* Stacks the card and button vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center;     /* Centers horizontally */
+    min-height: 100vh;       /* Takes up full screen height */
+    margin: 0;               /* Removes default browser margins */
+}
+
+#profileCard {
+    width: 300px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* The active status class defined here */
+#profileCard.active-status {
+    background-color: #d4edda; /* Light green background */
+    border-color: #c3e6cb;
+}
+
+/* Simple button styling */
+#toggleStatusBtn {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
